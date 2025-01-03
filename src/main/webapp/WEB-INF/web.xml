@@ -1,0 +1,38 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<!-- Question 8 -->
+	<servlet>
+		<servlet-name>DispatcherServlet</servlet-name>
+		<display-name>DispatcherServlet</display-name>
+		<description></description>
+		<servlet-class>com.itsc.ioc.OnlineBookstore.DispatcherServlet</servlet-class>
+	</servlet>
+	<!-- <servlet>
+		<servlet-name>LoggingAspect</servlet-name>
+		<display-name>LoggingAspect</display-name>
+		<description></description>
+		<servlet-class>com.itsc.ioc.OnlineBookstore.LoggingAspect</servlet-class>
+	</servlet> -->
+	<servlet>
+		<servlet-name>SearchBookServlet</servlet-name>
+		<display-name>SearchBookServlet</display-name>
+		<description></description>
+		<servlet-class>com.itsc.ioc.OnlineBookstore.SearchBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DispatcherServlet</servlet-name>
+		<url-pattern>/DispatcherServlet</url-pattern>
+	</servlet-mapping>
+	<!-- <servlet-mapping>
+		<servlet-name>LoggingAspect</servlet-name>
+		<url-pattern>/LoggingAspect</url-pattern>
+	</servlet-mapping> -->
+	<servlet-mapping>
+		<servlet-name>SearchBookServlet</servlet-name>
+		<url-pattern>/SearchBookServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
